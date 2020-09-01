@@ -1,1 +1,1 @@
-# unique-shop
+# Unique shop
