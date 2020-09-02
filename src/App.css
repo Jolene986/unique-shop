@@ -1,4 +1,11 @@
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: 'Raleway', sans-serif;
-  padding: 20px 80px;
+  padding: 20px 40px;
+}
+a {
+  text-decoration: none;
+  color: black;
 }
