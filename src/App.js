@@ -29,7 +29,7 @@ class App extends Component {
         });
       }
 
-      this.setState({ currentUser: userAuth }); //if signed uot it will be null
+      this.setState({ currentUser: userAuth }); //if signed out it will be null
     });
   }
   componentWillUnmount(){
