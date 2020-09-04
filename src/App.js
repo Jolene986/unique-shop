@@ -26,12 +26,10 @@ class App extends Component {
               ...snapShot.data()
             }
           });
-
-          console.log(this.state);
         });
       }
 
-      this.setState({ currentUser: userAuth });
+      this.setState({ currentUser: userAuth }); //if signed uot it will be null
     });
   }
   componentWillUnmount(){
