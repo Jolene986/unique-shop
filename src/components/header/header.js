@@ -9,6 +9,7 @@ import {connect} from 'react-redux'
 
 
 const Header = ({currentUser}) => {
+  console.log(currentUser )
   return (
     <div className='header'>
       <Link className='logo-container' to='/'>
@@ -29,7 +30,7 @@ const Header = ({currentUser}) => {
   )
 }
 
-const mapStateToProps = state=> ({
+const mapStateToProps = (state)=> ({
   currentUser : state.user.currentUser
   })
 
