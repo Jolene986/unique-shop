@@ -1,31 +1,30 @@
-import React from 'react';
+import React from "react";
 
-import FormInput from '../form-input/form-input'
-import CustomButton from '../custom-button/custom-button';
+import FormInput from "../form-input/form-input";
+import CustomButton from "../custom-button/custom-button";
 
-import { auth, createUserProfileDocument } from '../../firebase/firebase.utils';
+import { auth, createUserProfileDocument } from "../../firebase/firebase.utils";
 
-import './sign-up.styles.scss';
+import "./sign-up.styles.scss";
 
 class SignUp extends React.Component {
   state = {
-      username: '',
-      email: '',
-      password: '',
-      confirmPassword: '',
-      showAlert:false
-    };
-  
+    username: "",
+    email: "",
+    password: "",
+    confirmPassword: "",
+    showAlert: false,
+  };
 
-  handleSubmit = async (event )=> {
+  handleSubmit = async (event) => {
     event.preventDefault();
 
     const { username, email, password, confirmPassword } = this.state;
 
     if (password !== confirmPassword) {
-      this.setState({showAlert:true})
+      this.setState({ showAlert: true });
       return;
-    }
+    } 
 
     try {
       const { user } = await auth.createUserWithEmailAndPassword(
@@ -36,26 +35,31 @@ class SignUp extends React.Component {
       await createUserProfileDocument(user, { username });
 
       this.setState({
-        
-        username: '',
-        email: '',
-        password: '',
-        confirmPassword: '',
-        showAlert:false
+        username: "",
+        email: "",
+        password: "",
+        confirmPassword: "",
+        showAlert: false,
       });
     } catch (error) {
       console.error(error);
     }
   };
 
-  handleChange = event => {
+  handleChange = (event) => {
     const { name, value } = event.target;
 
     this.setState({ [name]: value });
   };
 
   render() {
-    const { username, email, password, confirmPassword, showAlert } = this.state;
+    const {
+      username,
+      email,
+      password,
+      confirmPassword,
+      showAlert,
+    } = this.state;
     return (
       <>
         <div className="sign-up">
@@ -97,10 +101,13 @@ class SignUp extends React.Component {
             <CustomButton type="submit">SIGN UP</CustomButton>
           </form>
         </div>
-       <div className="alert" style={{
-        transform: showAlert ? "translateY(0)" : "translateY(-100vh)",
-        opacity: showAlert ? "1" : "0"
-      }}>
+        <div
+          className="alert"
+          style={{
+            transform: showAlert ? "translateY(0)" : "translateY(-100vh)",
+            opacity: showAlert ? "1" : "0",
+          }}
+        >
           <span
             className="closebtn"
             onClick={() => this.setState({ showAlert: false })}
@@ -109,7 +116,7 @@ class SignUp extends React.Component {
           </span>
           <strong>Passwords don't match!</strong>
         </div>
-        </>
+      </>
     );
   }
 }
