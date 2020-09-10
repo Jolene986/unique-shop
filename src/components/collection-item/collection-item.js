@@ -10,14 +10,14 @@ import { addToCart } from '../../redux/cart/cart-actions'
 
 const CollectionItem = ({ item, addToCart }) => {
 
-  const { name, price, imageUrl } = item
+  const { name, price, images } = item
 
   return (
     <div className="collection-item">
       <div
         className="image"
         style={{
-          backgroundImage: `url(${imageUrl})`,
+          backgroundImage: `url(${images[0]})`,
         }}
       />
       <div className="collection-footer">
