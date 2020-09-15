@@ -1,0 +1,66 @@
+.modal {
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100vw;
+  height: 100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255,255,255,0.4) ;
+  z-index: 10;
+  .quck-view-modal {
+    position: relative;
+    width: 70%;
+    min-height: 80vh;
+    margin:0 auto;
+    padding:10px;
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background-color: white;
+    border:2px solid #908d8d;
+    box-shadow:0 0 15px rgba(0,0,0,0.2);
+    .product-images, .product-details {
+      width: 45%;
+      display: flex;
+      flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .product-details {
+      h3 {
+        font-size: 32px;
+        }
+        h4 {
+          font-size: 28px;
+        }
+     
+      .quick-view-actions {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 28px;
+      }
+    }
+    .close-modal{
+      position: absolute;
+      top:10px;
+      right: 10px;
+      font-size: 24px;
+      cursor: pointer;
+    }
+    .quantity {
+      padding: 5px;
+    }
+    .arrow {
+      cursor: pointer;
+    }
+  
+    .quantity-value {
+      margin: 0 10px;
+    }
+  
+  }
+}

@@ -9,3 +9,24 @@ a {
   text-decoration: none;
   color: black;
 }
+/*React image galery*/
+.product-images > div > div > div.image-gallery-slide-wrapper.bottom > div > div > div.image-gallery-slide.center > div > img {
+  max-height: calc(100vh - 210px);
+}
+
+
+.image-gallery-thumbnail.active, .image-gallery-thumbnail:hover, .image-gallery-thumbnail:focus{
+  border-color: rgba(0,0,0,0.5);
+}
+
+.image-gallery-left-nav:hover, .image-gallery-right-nav:hover, .image-gallery-fullscreen-button:hover {
+  color: rgba(0,0,0,0.5);
+}
+
+.image-gallery-left-nav .image-gallery-svg, .image-gallery-right-nav .image-gallery-svg{
+  height: 95px;
+  width: 55px;
+}
+.product-images > div {
+  max-width: 100%;
+}
