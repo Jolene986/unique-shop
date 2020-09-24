@@ -11,7 +11,9 @@ a {
 }
 /*React image galery*/
 .product-images > div > div > div.image-gallery-slide-wrapper.bottom > div > div > div.image-gallery-slide.center > div > img {
+  min-height: 50vh;
   max-height: calc(100vh - 210px);
+  margin-top:1em;
 }
 
 

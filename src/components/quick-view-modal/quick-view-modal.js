@@ -51,6 +51,7 @@ const QuickViewModal = ({ item, cartItems, addToCart, decreaseQuantity,closeModa
         </div>
         <span className='close-modal' onClick={()=>closeModal()}>&#10007;</span>
       </div>
+      
     </div>
   );
 };

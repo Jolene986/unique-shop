@@ -15,9 +15,9 @@ const [showModal, setShowModal]= useState(false)
   const handleClose = ()=> {
     setShowModal(false)
   }
-console.log('im renderd')
   return (
     <>
+    
     <div className="collection-item">
       <div
         className="image"
