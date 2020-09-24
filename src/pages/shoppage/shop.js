@@ -8,7 +8,7 @@ import {selectCollections} from '../../redux/shop/shop.selectors'
 const Shop=({collections})=>(
     <div className='shop-page'>
       {collections.map(({ id, ...otherCollectionProps }) => (
-         <LazyLoad key={id} height={200} >
+         <LazyLoad key={id} height={200} offset={-50} >
            <CollectionPreview  {...otherCollectionProps} />
          </LazyLoad>
         
