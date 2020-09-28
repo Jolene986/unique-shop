@@ -37,5 +37,9 @@
     font-size: 24px;
     padding-left: 12px;
     cursor: pointer;
+    transition: all 0.3s ease-out;
+    &:hover{
+      font-size: 28px;
+    }
   }
 }
