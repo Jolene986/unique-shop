@@ -3,7 +3,7 @@ import LazyLoad from 'react-lazyload';
 import CollectionPreview from '../../components/collection-preview/collection-preview'
 //REDUX
 import {connect} from 'react-redux'
-import {selectCollections} from '../../redux/shop/shop.selectors'
+import {selectCollectionsForPreview} from '../../redux/shop/shop.selectors'
 
 const Shop=({collections})=>(
     <div className='shop-page'>
@@ -18,7 +18,7 @@ const Shop=({collections})=>(
 
     
    const mapStateToProps =state=> ({
-    collections : selectCollections(state)
+    collections : selectCollectionsForPreview(state)
    }
 )
 export default connect(mapStateToProps)(Shop)
