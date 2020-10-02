@@ -17,7 +17,7 @@ const [showModal, setShowModal]= useState(false)
   }
   return (
     <>
-    
+    {console.log('RENDER')}
     <div className="collection-item">
       <div
         className="image"

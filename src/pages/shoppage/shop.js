@@ -1,24 +1,19 @@
 import React from 'react'
-import LazyLoad from 'react-lazyload';
-import CollectionPreview from '../../components/collection-preview/collection-preview'
-//REDUX
-import {connect} from 'react-redux'
-import {selectCollectionsForPreview} from '../../redux/shop/shop.selectors'
+import {Route} from 'react-router-dom'
 
-const Shop=({collections})=>(
+
+import CollectionsOverview from '../../components/collections-overview/collections-overview'
+import CollectionPage from '../collectionpage/collectionPage'
+
+
+const Shop=({match})=>(
+  
     <div className='shop-page'>
-      {collections.map(({ id, ...otherCollectionProps }) => (
-         <LazyLoad key={id} height={200} offset={-50} >
-           <CollectionPreview  {...otherCollectionProps} />
-         </LazyLoad>
-        
-      ))}
+     <Route exact path={`${match.path}`} component={ CollectionsOverview}/>
+     <Route path={`${match.path}/:collectionId`} component={CollectionPage}/>
     </div>
   )
 
     
-   const mapStateToProps =state=> ({
-    collections : selectCollectionsForPreview(state)
-   }
-)
-export default connect(mapStateToProps)(Shop)
+
+export default Shop
