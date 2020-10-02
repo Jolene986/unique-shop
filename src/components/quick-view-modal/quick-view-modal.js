@@ -3,13 +3,12 @@ import "./quick-view-modal.styles.scss";
 import CustomButton from "../custom-button/custom-button";
 //REDUX
 import { connect } from "react-redux";
-import { selectCartItems } from "../../redux/cart/cart.selectors";
 import { addToCart } from "../../redux/cart/cart-actions";
 import { decereaseItemQuantity } from "../../redux/cart/cart-actions";
 import ModalImages from "../modal-images/modal-images";
 
-const QuickViewModal = ({ item, cartItems, addToCart, decreaseQuantity,closeModal }) => {
-  let isInCart = cartItems.find((cartItem) => cartItem.id === item.id);
+const QuickViewModal = ({ item, isInCart, addToCart, decreaseQuantity,closeModal }) => {
+  
   const modalRef = useRef(null);
 
   useEffect(() => {
@@ -55,11 +54,11 @@ const QuickViewModal = ({ item, cartItems, addToCart, decreaseQuantity,closeModa
     </div>
   );
 };
-const mapStateToProps = (state) => ({ cartItems: selectCartItems(state) });
+
 
 const matchDispatchToProps = (dispatch) => ({
   addToCart: (item) => dispatch(addToCart(item)),
   decreaseQuantity: (item) => dispatch(decereaseItemQuantity(item)),
 });
 
-export default connect(mapStateToProps, matchDispatchToProps)(QuickViewModal);
+export default connect(null, matchDispatchToProps)(QuickViewModal);
