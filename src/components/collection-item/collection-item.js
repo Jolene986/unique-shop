@@ -21,7 +21,6 @@ const [showModal, setShowModal]= useState(false)
   let isInCart = cartItems.find((cartItem) => cartItem.id === item.id);
   return (
     <>
-    {console.log('RENDER')}
     <div className="collection-item">
       <div
         className="image"
