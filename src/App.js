@@ -7,6 +7,7 @@ import HomePage from "./pages/homepage/homePage";
 import Shop from './pages/shoppage/shop';
 import SignInAndSignUp from './pages/signInAndSignUp/signInAndSignUp'
 import CheckOutPage from "./pages/checkoutpage/checkOutPage";
+import ContactPage from './pages/contactpage/contactPage'
 // COMPONENTS
 import Header from "./components/header/header";
 //REDUX
@@ -46,6 +47,7 @@ class App extends Component {
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route path="/shop" component={Shop} />
+          <Route exact path="/contact" component={ContactPage} />
           <Route
             exact
             path='/signin'
