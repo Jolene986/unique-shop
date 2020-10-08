@@ -1,13 +1,15 @@
 import React,{useRef, useEffect } from "react";
 import "./quick-view-modal.styles.scss";
+import Quantity from '../quantity/quantity'
 import CustomButton from "../custom-button/custom-button";
+import ModalImages from "../modal-images/modal-images";
 //REDUX
 import { connect } from "react-redux";
-import { addToCart } from "../../redux/cart/cart-actions";
-import { decereaseItemQuantity } from "../../redux/cart/cart-actions";
-import ModalImages from "../modal-images/modal-images";
+import { addToCart } from '../../redux/cart/cart-actions'
 
-const QuickViewModal = ({ item, isInCart, addToCart, decreaseQuantity,closeModal }) => {
+
+
+const QuickViewModal = ({ item, isInCart,closeModal ,addToCart}) => {
   
   const modalRef = useRef(null);
 
@@ -36,15 +38,7 @@ const QuickViewModal = ({ item, isInCart, addToCart, decreaseQuantity,closeModal
                 ADD TO CART
               </CustomButton>
             ) : (
-              <span className="quantity">
-                <span className="arrow" onClick={() => decreaseQuantity(item)}>
-                  &#10092;
-                </span>
-                <span className="quantity-value">{isInCart.quantity}</span>
-                <span className="arrow" onClick={() => addToCart(item)}>
-                  &#10093;
-                </span>
-              </span>
+              <Quantity item={item} quantity={isInCart.quantity}/>
             )}
           </div>
         </div>
@@ -57,8 +51,7 @@ const QuickViewModal = ({ item, isInCart, addToCart, decreaseQuantity,closeModal
 
 
 const matchDispatchToProps = (dispatch) => ({
-  addToCart: (item) => dispatch(addToCart(item)),
-  decreaseQuantity: (item) => dispatch(decereaseItemQuantity(item)),
+  addToCart: (item) => dispatch(addToCart(item))
 });
 
 export default connect(null, matchDispatchToProps)(QuickViewModal);
