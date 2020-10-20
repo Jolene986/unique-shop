@@ -16,11 +16,15 @@ import {setCurrentUser }from './redux/user/user-actions'
 import { selectCurrentUser } from "./redux/user/user.selectors";
 
 
+
 class App extends Component {
   
   unsubscribeFromAuth = null;
   componentDidMount() {
-    const {setCurrentUser} = this.props;
+    const {setCurrentUser } = this.props;
+   /*  Added shopdata to firestore
+   addCollectionAndDocuments('collections', collections.map(({title, items})=>({title, items})) )*/
+    
     this.unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth => {
       if (userAuth) {
         const userRef = await createUserProfileDocument(userAuth);
@@ -67,10 +71,12 @@ class App extends Component {
   
 }
 const mapStateToProps = (state)=> ({
-  currentUser : selectCurrentUser(state)
+  currentUser : selectCurrentUser(state),
+  
   })
 const mapDispatchToProps = dispatch=> ({
-setCurrentUser : user => dispatch(setCurrentUser(user)) 
+setCurrentUser : user => dispatch(setCurrentUser(user)),
+
 })
 
 export default connect(mapStateToProps,mapDispatchToProps)(App);

@@ -55,21 +55,21 @@ const SHOP_DATA = {
       {
         id: 15,
         name: 'Teardrop',
-        images: ['https://content.diamondnexus.com/media/catalog/product/cache/1/thumbnail/600x/9df78eab33525d08d6e5fb8d27136e95/p/r/prague_pear_-_white_view_-_1.jpg'],
+        images: ['https://content.diamondnexus.com/media/catalog/product/cache/1/thumbnail/600x/9df78eab33525d08d6e5fb8d27136e95/p/r/prague_pear_-_white_view_-_1.jpg', 'https://content.diamondnexus.com/media/catalog/product/cache/1/thumbnail/600x/9df78eab33525d08d6e5fb8d27136e95/p/r/prague_pear_-_white_view_-_1.jpg', 'https://content.diamondnexus.com/media/catalog/product/cache/1/thumbnail/600x/9df78eab33525d08d6e5fb8d27136e95/p/r/prague_pear_-_white_view_-_1.jpg'],
         price: 160,
         description:'Masterfully crafted, flawlessly engineered uniqunes, resulting in a ring so beautiful it has long been a symbol of the world’s greatest love stories. This striking design is available with  stones ranging from one to more than six carats.'
       },
       {
         id: 16,
         name: 'Classic Leaves',
-        images: ['https://cdn.caratlane.com/media/catalog/product/cache/6/image/480x480/9df78eab33525d08d6e5fb8d27136e95//J/R/JR03980-YGP900_11_listfront.jpg'],
+        images: ['https://cdn.caratlane.com/media/catalog/product/cache/6/image/480x480/9df78eab33525d08d6e5fb8d27136e95//J/R/JR03980-YGP900_11_listfront.jpg', 'https://cdn.caratlane.com/media/catalog/product/cache/6/image/480x480/9df78eab33525d08d6e5fb8d27136e95//J/R/JR03980-YGP900_11_listfront.jpg', 'https://cdn.caratlane.com/media/catalog/product/cache/6/image/480x480/9df78eab33525d08d6e5fb8d27136e95//J/R/JR03980-YGP900_11_listfront.jpg'],
         price: 190,
         description:'Masterfully crafted, flawlessly engineered uniqunes, resulting in a ring so beautiful it has long been a symbol of the world’s greatest love stories. This striking design is available with  stones ranging from one to more than six carats.'
       },
       {
         id: 17,
         name: 'Summer Rose',
-        images: ['https://images-na.ssl-images-amazon.com/images/I/41ak7YnqfiL._UY395_.jpg'],
+        images: ['https://images-na.ssl-images-amazon.com/images/I/41ak7YnqfiL._UY395_.jpg', 'https://images-na.ssl-images-amazon.com/images/I/41ak7YnqfiL._UY395_.jpg', 'https://images-na.ssl-images-amazon.com/images/I/41ak7YnqfiL._UY395_.jpg'],
         price: 200,
         description:'Masterfully crafted, flawlessly engineered uniqunes, resulting in a ring so beautiful it has long been a symbol of the world’s greatest love stories. This striking design is available with  stones ranging from one to more than six carats.'
       }
@@ -96,7 +96,7 @@ const SHOP_DATA = {
       'https://images-na.ssl-images-amazon.com/images/I/617Cv9RDMpL._AC_SX425_.jpg',
       'https://i.pinimg.com/originals/89/d8/35/89d8351ce83107e23ccbe9dfd492250a.jpg'
     ],
-        price: 90,
+        price: 900,
         description:'This beautiful brooch, decorated with filigree work stands out with the unique design, inspired by the purity of the Nature.The perfect choice to emphasize femininity on special occasions and make happy any lady to whom it is intended.'
       },
       {
@@ -148,7 +148,7 @@ const SHOP_DATA = {
         images: ['https://image.brilliantearth.com/media/product_images/SI/BE3DH4_white_top.jpg',
       'https://images.baunat.com/en/15148100_82396-cl-gw-e1-0400s1_722x722/4-00-carat-classic-diamond-earrings-in-white-gold-with-six-prongs.jpg',
     'https://media.petitegeneve.com/media/products/1330/poster/earrings-large.png'],
-        price: 18,
+        price: 180,
         description:'This luxurious diamond earrings, decorated with filigree work stands out with the unique design, inspired by the purity of the Nature.The perfect choice to emphasize femininity on special occasions and make happy any lady to whom it is intended.'
       },
       {
@@ -166,42 +166,42 @@ const SHOP_DATA = {
         images: ['https://i5.walmartimages.com/asr/d4c6e2d2-b900-4976-a6ef-78cf63edc08c_1.b2602ee2a014f8adec9721fffd489e53.jpeg?odnWidth=612&odnHeight=612&odnBg=ffffff',
       'https://images.bloomingdalesassets.com/is/image/BLM/products/5/optimized/8145915_fpx.tif?op_sharpen=1&wid=700&fit=fit,1&$filtersm$',
     'https://www.cantonroadjewelry.com/wp-content/uploads/2018/01/Stud-Earrings.png'],
-        price: 25,
+        price: 250,
         description:'This luxurious diamond earrings, decorated with filigree work stands out with the unique design, inspired by the purity of the Nature.The perfect choice to emphasize femininity on special occasions and make happy any lady to whom it is intended.'
       },
       {
         id: 5,
         name: 'Dreamcatcher Drop',
-        images: ['https://media.4rgos.it/s/Argos/9188095_R_SET?$Main768$&w=620&h=620'],
+        images: ['https://media.4rgos.it/s/Argos/9188095_R_SET?$Main768$&w=620&h=620', 'https://media.4rgos.it/s/Argos/9188095_R_SET?$Main768$&w=620&h=620', 'https://media.4rgos.it/s/Argos/9188095_R_SET?$Main768$&w=620&h=620'],
         price: 18,
         description:'This luxurious diamond earrings, decorated with filigree work stands out with the unique design, inspired by the purity of the Nature.The perfect choice to emphasize femininity on special occasions and make happy any lady to whom it is intended.'
       },
       {
         id: 6,
         name: 'Butterfly Drop',
-        images: ['https://i0.wp.com/www.jeweldaze.com/wp-content/uploads/2019/10/37-4.jpg?fit=800%2C800&ssl=1'],
-        price: 14,
+        images: ['https://i0.wp.com/www.jeweldaze.com/wp-content/uploads/2019/10/37-4.jpg?fit=800%2C800&ssl=1', 'https://i0.wp.com/www.jeweldaze.com/wp-content/uploads/2019/10/37-4.jpg?fit=800%2C800&ssl=1', 'https://i0.wp.com/www.jeweldaze.com/wp-content/uploads/2019/10/37-4.jpg?fit=800%2C800&ssl=1'],
+        price: 140,
         description:'This luxurious diamond earrings, decorated with filigree work stands out with the unique design, inspired by the purity of the Nature.The perfect choice to emphasize femininity on special occasions and make happy any lady to whom it is intended.'
       },
       {
         id: 7,
         name: 'Honoria Drop',
-        images: ['https://s7d1.scene7.com/is/image/BHLDN/51463529_070_a?$pdpmain$'],
+        images: ['https://s7d1.scene7.com/is/image/BHLDN/51463529_070_a?$pdpmain$', 'https://s7d1.scene7.com/is/image/BHLDN/51463529_070_a?$pdpmain$', 'https://s7d1.scene7.com/is/image/BHLDN/51463529_070_a?$pdpmain$'],
         price: 18,
         description:'This luxurious diamond earrings, decorated with filigree work stands out with the unique design, inspired by the purity of the Nature.The perfect choice to emphasize femininity on special occasions and make happy any lady to whom it is intended.'
       },
       {
         id: 8,
         name: 'Amabel',
-        images: ['https://s7d1.scene7.com/is/image/BHLDN/52946035_007_a?$pdpmain$'],
-        price: 14,
+        images: ['https://s7d1.scene7.com/is/image/BHLDN/52946035_007_a?$pdpmain$', 'https://s7d1.scene7.com/is/image/BHLDN/52946035_007_a?$pdpmain$', 'https://s7d1.scene7.com/is/image/BHLDN/52946035_007_a?$pdpmain$'],
+        price: 145,
         description:'This luxurious diamond earrings, decorated with filigree work stands out with the unique design, inspired by the purity of the Nature.The perfect choice to emphasize femininity on special occasions and make happy any lady to whom it is intended.'
       },
       {
         id: 9,
         name: 'Myrtle Drops',
-        images: ['https://s7d1.scene7.com/is/image/BHLDN/40084246_007_a?$pdpmain$'],
-        price: 16,
+        images: ['https://s7d1.scene7.com/is/image/BHLDN/40084246_007_a?$pdpmain$', 'https://s7d1.scene7.com/is/image/BHLDN/40084246_007_a?$pdpmain$', 'https://s7d1.scene7.com/is/image/BHLDN/40084246_007_a?$pdpmain$'],
+        price: 165,
         description:'This luxurious diamond earrings, decorated with filigree work stands out with the unique design, inspired by the purity of the Nature.The perfect choice to emphasize femininity on special occasions and make happy any lady to whom it is intended.'
       }
     ]
@@ -225,7 +225,7 @@ const SHOP_DATA = {
         name: 'Charmed',
         images: ['https://media.4rgos.it/s/Argos/9185029_R_SET?$Main768$&w=620&h=620',
       'https://lh3.googleusercontent.com/proxy/SFjlrbn-0fvx3Jij0-4-zgyVIDnc19nxWX2UQcQhFunl3LtKYD4G9Fb2d0gIwgSBQvYLrn10uk0RPGOV691HuXKTjvx8YCoFMCVRGsvnq7V5BLewvHbEb0izBwfqiucZy83hB6M5FYca_uXanTTF-nH1LW1XcYFsITDvkXuQcZ207l5CxMjJCvMS7AUwrvnxf_fmWyI7uG6WbE1DxduMLQDBuM9gR6-LOQ','https://www.dhresource.com/0x0/f2/albu/g8/M01/A0/23/rBVaVFzAToiAdTDIAAXQjm1i3Rs580.jpg/romantic-love-key-silver-charm-bracelet-for.jpg'],
-        price: 20,
+        price: 200,
         description:'This luxurious diamond Bracelet, stands out with the unique design, inspired by the purity of the Nature.The perfect choice to emphasize femininity on special occasions and make happy any lady to whom it is intended.'
       },
       {
@@ -244,28 +244,28 @@ const SHOP_DATA = {
       'https://www.jared.com/productimages/processed/V-802208506_0_800.jpg?pristine=true',
       'https://www.zalesoutlet.com/productimages/processed/V-20109649_0_800.jpg'
     ],
-        price: 80,
+        price: 800,
         description:'This luxurious diamond Bracelet, stands out with the unique design, inspired by the purity of the Nature.The perfect choice to emphasize femininity on special occasions and make happy any lady to whom it is intended.'
       },
       {
         id: 27,
         name: 'Simply Silver',
-        images: ['https://images-na.ssl-images-amazon.com/images/I/41ZG2GGTyWL.jpg'],
+        images: ['https://images-na.ssl-images-amazon.com/images/I/41ZG2GGTyWL.jpg','https://images-na.ssl-images-amazon.com/images/I/41ZG2GGTyWL.jpg', 'https://images-na.ssl-images-amazon.com/images/I/41ZG2GGTyWL.jpg'],
         price: 45,
         description:'This luxurious diamond Bracelet, stands out with the unique design, inspired by the purity of the Nature.The perfect choice to emphasize femininity on special occasions and make happy any lady to whom it is intended.'
       },
       {
         id: 28,
         name: 'Diamond Accent',
-        images: ['https://www.kay.com/productimages/processed/V-111532002_0_320.jpg?pristine=true'],
+        images: ['https://www.kay.com/productimages/processed/V-111532002_0_320.jpg?pristine=true','https://www.kay.com/productimages/processed/V-111532002_0_320.jpg?pristine=true','https://www.kay.com/productimages/processed/V-111532002_0_320.jpg?pristine=true'],
         price: 135,
         description:'This luxurious diamond Bracelet, stands out with the unique design, inspired by the purity of the Nature.The perfect choice to emphasize femininity on special occasions and make happy any lady to whom it is intended.'
       },
       {
         id: 29,
         name: 'Chamomile Flower Charm',
-        images: ['https://assets.kogan.com/images/brilliant/BTQ-VB523A/1-9b3061fcf7-vogue925-vb523a-1.jpg?auto=webp&canvas=753%2C502&fit=bounds&height=502&quality=75&width=753'],
-        price: 20,
+        images: ['https://assets.kogan.com/images/brilliant/BTQ-VB523A/1-9b3061fcf7-vogue925-vb523a-1.jpg?auto=webp&canvas=753%2C502&fit=bounds&height=502&quality=75&width=753', 'https://assets.kogan.com/images/brilliant/BTQ-VB523A/1-9b3061fcf7-vogue925-vb523a-1.jpg?auto=webp&canvas=753%2C502&fit=bounds&height=502&quality=75&width=753','https://assets.kogan.com/images/brilliant/BTQ-VB523A/1-9b3061fcf7-vogue925-vb523a-1.jpg?auto=webp&canvas=753%2C502&fit=bounds&height=502&quality=75&width=753'],
+        price: 200,
         description:'This luxurious diamond Bracelet, stands out with the unique design, inspired by the purity of the Nature.The perfect choice to emphasize femininity on special occasions and make happy any lady to whom it is intended.'
       }
     ]
@@ -290,7 +290,7 @@ const SHOP_DATA = {
         images: ['https://media.4rgos.it/i/Argos/7094057_R_Z001A?w=750&h=440&qlt=70',
       'https://www.kay.com/productimages/processed/V-580665800_0_800.jpg?pristine=true',
     'https://www.lmfj.com//media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/D/N/DN99A2126_2.jpg'],
-        price: 20,
+        price: 200,
         description:'This luxurious diamond Necklase with pendant, stands out with the unique design, inspired by the purity of the Nature.The perfect choice to emphasize femininity on special occasions and make happy any lady to whom it is intended.'
       },
       {
@@ -300,7 +300,7 @@ const SHOP_DATA = {
         images: ['https://slimages.macysassets.com/is/image/MCY/products/8/optimized/3422008_fpx.tif?op_sharpen=1&wid=500&hei=613&fit=fit,1&$filtersm$',
       'https://www.kay.com/productimages/processed/V-173434604_0_800.jpg?pristine=true',
     'https://www.helzberg.com/media/catalog/product/s/f/sftp_i_imagesnew24304242430424.jpeg?quality=80&bg-color=255,255,255&fit=bounds&height=600&width=600&canvas=600:600'],
-        price: 40,
+        price: 400,
         description:'This luxurious diamond Necklase with pendant, stands out with the unique design, inspired by the purity of the Nature.The perfect choice to emphasize femininity on special occasions and make happy any lady to whom it is intended.'
       },
       {
@@ -309,21 +309,21 @@ const SHOP_DATA = {
         images: ['https://www.helzberg.com/media/catalog/product/s/f/sftp_i_imagesinitial23254902325490.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=600&width=600&canvas=600:600',
       'https://ak1.ostkcdn.com/images/products/9588820/18k-White-Gold-1ct-TDW-Diamond-Star-Flower-Pendant-I-J-SI1-SI2-1d209e75-b81e-4248-bb76-1aa38eec2ad9_600.jpg?impolicy=medium',
     'https://www.gordonsjewelers.com/productimages/processed/V-18679258_0_800.jpg?pristine=true'],
-        price: 25,
+        price: 250,
         description:'This luxurious diamond Necklase with pendant, stands out with the unique design, inspired by the purity of the Nature.The perfect choice to emphasize femininity on special occasions and make happy any lady to whom it is intended.'
       },
       {
         id: 34,
         name: 'Firefly',
-        images: '[https://media.4rgos.it/s/Argos/2013909_R_SET?$Main768$&w=620&h=620]',
+        images: ['https://media.4rgos.it/s/Argos/2013909_R_SET?$Main768$&w=620&h=620', 'https://media.4rgos.it/s/Argos/2013909_R_SET?$Main768$&w=620&h=620','https://media.4rgos.it/s/Argos/2013909_R_SET?$Main768$&w=620&h=620'],
         price: 25,
         description:'This luxurious diamond Necklase with pendant, stands out with the unique design, inspired by the purity of the Nature.The perfect choice to emphasize femininity on special occasions and make happy any lady to whom it is intended.'
       },
       {
         id: 35,
         name: 'Circle Of Life',
-        images: ['https://target.scene7.com/is/image/Target/GUEST_a4cbead9-9071-4225-8eb8-2750bd45dd66?wid=488&hei=488&fmt=pjpeg'],
-        price: 25,
+        images: ['https://target.scene7.com/is/image/Target/GUEST_a4cbead9-9071-4225-8eb8-2750bd45dd66?wid=488&hei=488&fmt=pjpeg','https://target.scene7.com/is/image/Target/GUEST_a4cbead9-9071-4225-8eb8-2750bd45dd66?wid=488&hei=488&fmt=pjpeg','https://target.scene7.com/is/image/Target/GUEST_a4cbead9-9071-4225-8eb8-2750bd45dd66?wid=488&hei=488&fmt=pjpeg'],
+        price: 250,
         description:'This luxurious diamond Necklase with pendant, stands out with the unique design, inspired by the purity of the Nature.The perfect choice to emphasize femininity on special occasions and make happy any lady to whom it is intended.'
       }
     ]
