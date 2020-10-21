@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import QuickViewModal from "../quick-view-modal/quick-view-modal";
 
+
 //STYLED
 import {
   StyledCollectionItem,
